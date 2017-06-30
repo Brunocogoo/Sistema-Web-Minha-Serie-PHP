@@ -1,0 +1,239 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+margin:0;	
+}
+
+#Main{
+	background-color:white;
+	width:100%;
+	height:100%;
+}
+
+#headerwrap {
+	/*background: url(../Img/back.jpg) no-repeat center top;*/
+	
+	/*background-color:rgba(255,255,255,1);*/
+	background: radial-gradient(circle, rgba(255,255,255,0.90),  rgba(255,255,255,0.80));
+	
+	margin-top: -15px;
+	padding-top:70px;
+	text-align:center;
+	background-attachment: fixed;
+	background-position: center center;
+
+	width: 100%;
+    height: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+}
+
+.thumb {
+    margin-bottom: 30px;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(255,255,255); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width:100%;
+    max-width: 1000px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #F9F9F9 ;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 120%;
+    }
+}
+
+.modal-dialog{width:1000px;
+
+}
+.thumbnail {margin-bottom:6px;}
+
+.bg_video{
+	position: fixed; 
+	right: 0; 
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -1000;
+	background: url(images/torre.jpg) no-repeat;
+	background-size: cover; 
+}
+
+
+#preloader {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fff; /* change if the mask should be a color other than white */
+    z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally on the screen */
+    top:50%; /* centers the loading animation vertically on the screen */
+    background-image:url(../img/loading.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+#centralizar {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+#centro {
+    width:80%;
+    height:auto;
+    border-width: medium;
+
+    position:absolute;
+    border-color: #8c8c8c;
+    border-style: solid;
+    left:50%;
+
+    margin-left:-40%;
+    margin-bottom: 60px;
+}
+
+
+#bordas {
+
+    border-color: #ffffe6;
+
+    height: auto;
+    border-style: solid;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: linear-gradient(#ffffcc,#ffffe6);
+
+
+
+}
+#bordasfooter {
+
+    border-color: #ffffe6;
+    border-style: solid;
+    margin-bottom: 60px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    background: linear-gradient(#ffffcc,#ffffe6);
+
+
+}
+
+@media screen and (max-width: 950px) {
+    #headerwrap {padding-top:0px;}
+}
+
+
+
